@@ -1,0 +1,8 @@
+type Chat @model {
+  id: ID!
+  title: String
+  isGroup: Boolean!
+  messages: [Message!]!
+  createdAt: AWSDateTime
+  updatedAt: AWSDateTime
+}
